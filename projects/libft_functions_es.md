@@ -3,7 +3,7 @@ layout: default
 title: "fran-byte 42 Madrid"
 ---
 
-# Parte 1 - Funciones de libc
+# Parte 1 - Funciones de libft
 
 
 ## [ft_isalpha](../0/libft/ft_isalpha.c)
