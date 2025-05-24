@@ -1,5 +1,177 @@
-title: "Milestone 1 - libft"
-remote_theme: pages-themes/midnight@v0.2.0
+title: 42
+subtitle: Madrid
+description: >-
+  Hi! I'm Fran, an electronics specialist with 25+ years of hands-on experience in PCB diagnostics and banking machinery repair. I'm currently transitioning into the world of programming through the rigorous training program at 42 Madrid.
+
+url: "https://fran-byte.github.io/42"
+baseurl: ""
+
+# Navigation
+urls:
+  - text: Home
+    url: /
+  - text: About
+    url: /about
+  - text: Gallery
+    url: /gallery
+  - text: Contact
+    url: /contact
+
+# Author details
+author_logo: profile2.png
+author: Fran Byte
+author_bio: Hi! I'm Francisco, an electronics specialist transitioning into programming through 42 Madrid.
+author_location: Madrid, Spain
+author_website_url: "https://github.com/fran-byte"
+typewrite-text: Electronics veteran turned programmer. 42 Madrid student. Exploring the art of code.
+hero_cover_img: sample_cover.jpg
+
+# Work Experience
+author_work_experiences:
+  - company_name: Banking Equipment Specialist
+    company_logo: bank.png
+    company_url: "#"
+    designation: Electronics Engineer
+    description: Diagnosed and repaired complex banking machinery and PCBs for over 25 years.
+    visibility: true
+
+# Education
+author_education_details:
+  - college_logo: 42.png
+    college_name: 42 Madrid
+    college_url: https://42madrid.com
+    college_degree: Software Engineering
+    description: Intensive programming curriculum focused on system-level programming, C, and algorithms.
+    visibility: true
+
+# Projects
+author_project_details:
+  - project_thumbnail: minishell.png
+    project_title: minishell
+    project_description: Unix shell with pipes, redirections, and custom parsing in C.
+    project_url: https://github.com/fran-byte/42-minishell
+    visibility: true
+  - project_thumbnail: python.png
+    project_title: Learn-Python
+    project_description: Python fundamentals, exercises and notes.
+    project_url: https://github.com/fran-byte/learn-python-fundamentals
+    visibility: true
+  - project_thumbnail: orange-pi.png
+    project_title: Orange Pi Server
+    project_description: Nginx server configuration on Armbian with Orange Pi.
+    project_url: "#"
+    visibility: true
+
+# Social links
+github_username: fran-byte
+instagram_username: fran_byte
+# If the theme supports full URL:
+# instagram_url: https://www.instagram.com/fran_byte?igsh=MW9jdjFjZ2E5NjB0Nq==
+
+# Commenting
+# disqus_shortname: ""
+# hyvor_talk_website_id: ""
+
+# Wakatime
+wakatime_username: ""
+
+# Mailchimp Newsletter
+mailchimp_form_url: ""
+
+# Contact form
+# If you don’t want the email to show publicly, just don’t use it
+formspree_email: ""
+
+# Releases widget
+olvy_organization: devlopr
+olvy_widget_type: sidebar
+
+# Syntax highlighting
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Section toggles
+show_author_work_experiences: true
+show_author_education_details: true
+show_author_project_details: true
+
+# Pagination
+paginate: 4
+per_page: 4
+paginate_path: "/blog/page/:num/"
+
+# Collections
+collections:
+  products:
+    output: true
+  authors:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: "gallery"
+    values:
+      permalink: /:path/:basename:output_ext
+  - scope:
+      path: ""
+      type: authors
+    values:
+      layout: author
+      permalink: /blog/authors/:slug
+  - scope:
+      path: "assets/**"
+    values:
+      sitemap: false
+
+# Build settings
 plugins:
-  - jekyll-remote-theme
-baseurl: "/42-libft"
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - assets/bower_components/isotope-layout/README.md
+  - assets/bower_components/icono/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-svg-core/README.md
+  - assets/bower_components/ghosthunter/README.md
+  - assets/bower_components/nanobar/README.md
+  - assets/bower_components/lightgallery/demo/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/free-brands-svg-icons/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/free-solid-svg-icons/README.md
+  - assets/bower_components/jquery-mousewheel/README.md
+  - assets/bower_components/get-size/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome/README.md
+  - assets/bower_components/jquery-mousewheel/ChangeLog/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-regular/README.md
+  - assets/bower_components/desandro-matches-selector/README.md
+  - assets/bower_components/ev-emitter/README.md
+  - assets/bower_components/font-awesome/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-solid/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-webfonts/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-brands/README.md
+  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-common-types/README.md
+  - assets/bower_components/ghosthunter/example/Index.html
+  - assets/bower_components/lightgallery/test/lightgallery.html
+  - assets/bower_components/masonry-layout/README.md
+  - assets/bower_components/imagesloaded/README.md
+
+destination: ./build
