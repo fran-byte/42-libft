@@ -1,6 +1,7 @@
 ---
-layout: default
-title: "fran-byte 42 Madrid"
+title: libft English
+layout: page
+permalink: /get-started/
 ---
 
 ## 🔹 1. Prerequisites (Before Starting Libft)
